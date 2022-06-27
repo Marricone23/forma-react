@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:ital,wght@0,300;1,200;1,300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&family=Montserrat:ital,wght@0,300;1,200;1,300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    background-color: #797979;
+    color: white;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;	
+    line-height: 40px;   
+ 
+}
+
+.container {  
+    max-width: 440px;    
+    margin: 100px auto;  
+    padding: 40px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.btn {
+    font-family: "Montserrat";
+    color: rgb(71, 67, 67);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    border: 2px transparent;
+    background-color: whitesmoke ;
+    border-radius: 10px;
+}
+
+.text-field {
+    height: 150px;
+}
