@@ -15,9 +15,16 @@ constructor (props){
 }
 
 onValueChange = (e) => {
-    this.setState({
-        [e.target.name] : e.target.value
-    })
+    switch (e.target.name){
+        case 'name':
+            this.setState({name:e.target.value});
+            break;
+        case 'mail':
+            this.setState({mail:e.target.value});
+            break;
+
+    }
+    
 }
     render(){
         const {name, mail, tel, date, text} = this.state;
@@ -44,14 +51,27 @@ onValueChange = (e) => {
                    placeholder="insert your mail adress" required></input>              
                 <span class="lable">Tel:</span> 
                   <input type="tel"
-                   className="tel" name="phone" value={tel} placeholder="insert your number" required></input>                             
+                   className="tel" 
+                   name="phone" 
+                   value={tel} 
+                   placeholder="insert your number" required></input>                             
                 <span class="lable">Date of Birth:</span> 
-                  <input type="date" id="date" className="calendar" name="date" value={date} required></input>
+                  <input
+                   type="date" id="date" 
+                   className="calendar" 
+                   name="date" 
+                   value={date} required></input>
                   <input 
-                  className = "btn" type="submit" value="Отправить"></input>              
+                  className = "btn" 
+                  type="submit" 
+                  value="Отправить"></input>              
                 <span class="lable">Message:</span> 
                   <textarea
-                   className="text-field" value={text} minLength={10} maxLength={300} placeholder="write your message"></textarea>
+                   className="text-field" 
+                   value={text} 
+                   minLength={10} 
+                   maxLength={300} 
+                   placeholder="write your message"></textarea>
                   <button
                   className = "btn" type="button">Send</button>  
                                 
