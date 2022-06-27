@@ -14,6 +14,11 @@ constructor (props){
     }
 }
 
+onValueChange = (e) => {
+    this.setState({
+        [e.target.name] : e.target.value
+    })
+}
     render(){
         const {name, mail, tel, date, text} = this.state;
 
@@ -23,10 +28,20 @@ constructor (props){
                
                 <span class="lable">ФИО: </span>            
                   <input type="text" 
-                  className="name" name="name" value ={name} placeholder="name" minLength={3} maxLength={10}></input>                           
+                  className="name" 
+                  name="name" 
+                  value ={name} 
+                  onChange = {this.onValueChange}
+                  placeholder="name"
+                  minLength={3} 
+                  maxLength={10}></input>                           
                 <span class="lable"> E-mail:</span> 
                   <input type="text" 
-                  className="email" name="email" value={mail} placeholder="insert your mail adress" required></input>              
+                  className="email"
+                   name="email" 
+                   value={mail}
+                   onChange = {this.onValueChange} 
+                   placeholder="insert your mail adress" required></input>              
                 <span class="lable">Tel:</span> 
                   <input type="tel"
                    className="tel" name="phone" value={tel} placeholder="insert your number" required></input>                             
