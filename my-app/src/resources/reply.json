@@ -1,0 +1,6 @@
+{
+    "results": [
+      { "error": "Your message wasn't send. Something went wrong"},
+      { "success": "The message was send succesfuly"}
+    ] 
+  }

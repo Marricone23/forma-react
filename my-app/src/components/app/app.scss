@@ -47,12 +47,12 @@ body{
     border: 2px transparent;
     background-color: whitesmoke ;
     border-radius: 10px;
-
+    
+    &:hover {
+        color: white;
+        background-color: lightslategray;
+    }
    
-}
-.btn:hover {
-    color: white;
-    background-color: lightslategray;
 }
 
 .text-field {
